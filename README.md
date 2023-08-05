@@ -26,3 +26,6 @@ MCQApplication is simple MCQ desktop application build using javafx.
 | :-------- | :------- | :------------------------- |
 | ![App Screenshot](https://github.com/Surajpurohitcode/MCQApplication/blob/master/media/MCQ_Screenshot1.png) | ![App Screenshot](https://github.com/Surajpurohitcode/MCQApplication/blob/master/media/MCQ_Screenshot2.png) |  |
 
+# Project libraries
+
+third party javafx libraries are used to develop frontend part of this application
