@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" prefHeight="550.0" prefWidth="833.0" style="-fx-background-color: #131619;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.Result">
+   <children>
+      <Label alignment="CENTER" layoutX="286.0" layoutY="79.0" text="Quizzity" textFill="#4d62e5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <HBox layoutX="50.0" layoutY="106.0" prefHeight="323.0" prefWidth="733.0" style="-fx-background-color: #393E42; -fx-background-radius: 30;" AnchorPane.bottomAnchor="120.80000000000001" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <AnchorPane prefHeight="323.0" prefWidth="344.0">
+               <children>
+                  <ProgressIndicator fx:id="rightprogress" layoutX="144.0" layoutY="95.0" prefHeight="97.0" prefWidth="244.0" progress="0.67" style="-fx-background-color: blue; -fx-background-radius: 30;" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                  <Label layoutX="137.0" layoutY="242.0" text="Right Answer:-" textFill="WHITE" AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rightans" layoutX="228.0" layoutY="242.0" text="null" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="323.0" prefWidth="390.0">
+               <children>
+                  <ProgressIndicator fx:id="wrongprogress" layoutX="144.0" layoutY="95.0" prefHeight="97.0" prefWidth="244.0" progress="0.67" style="-fx-background-color: red; -fx-background-radius: 30;" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                  <Label layoutX="137.0" layoutY="242.0" text="Wrong Answer:-" textFill="WHITE" AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wrongans" layoutX="245.0" layoutY="242.0" text="null" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <MFXButton fx:id="homebtn" layoutX="328.0" layoutY="474.0" onAction="#goHome" prefHeight="54.0" prefWidth="175.0" style="-fx-background-color: #4d62e5; -fx-text-fill: white; -fx-background-radius: 15;" text="Go to home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

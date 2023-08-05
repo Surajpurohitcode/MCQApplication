@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="938.0" style="-fx-background-color: #131619;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.McqQa">
+    <right>
+        <AnchorPane prefHeight="631.0" prefWidth="266.0" style="-fx-background-color: #1C1F22; -fx-border-width: 1px;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="48.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 4px;" text="Level 1" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                    <padding>
+                        <Insets bottom="8.0" top="8.0" />
+                    </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+                </Label>
+                <Label fx:id="subjectdata" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="74.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 4px;" text="null" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+                    <padding>
+                        <Insets bottom="8.0" top="8.0" />
+                    </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+                </Label>
+                <Label fx:id="timer" alignment="CENTER" contentDisplay="CENTER" layoutY="253.0" text="00:00" textFill="#a8b9ca" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+            <MFXButton fx:id="stopgame" alignment="CENTER" layoutX="114.0" layoutY="502.0" onAction="#stopGame" style="-fx-background-color: #FF8E8E; -fx-font-weight: bold;" text="Stop" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <padding>
+                  <Insets bottom="8.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <rippleColor>
+                  <RadialGradient centerX="0.5308370800270383" centerY="0.6060606132854115" focusAngle="-85.24" focusDistance="-0.20183480114018149" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.27407407760620117" blue="0.27407407760620117" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9684210419654846" green="0.5093177556991577" blue="0.5093177556991577" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            </children>
+        </AnchorPane>
+    </right>
+   <center>
+      <AnchorPane prefHeight="289.0" prefWidth="672.0" style="-fx-border-color: #676565; -fx-border-width: 0 1 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="230.0" prefHeight="108.0" prefWidth="672.0" style="-fx-background-color: #1C1F22; -fx-border-width: 0 0 1 0; -fx-border-color: #676565;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="question" layoutX="74.0" layoutY="41.0" text="Which of the following option leads to the portability and security of Java?" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="45.0" text="Q:" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <MFXButton layoutX="112.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: #B6F09C; -fx-text-fill: black; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="1" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="112.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="152.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="2" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="152.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="192.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="3" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="192.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="232.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="4" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="232.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="272.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="5" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="272.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.10980392247438431" green="0.14509804546833038" blue="0.27450981736183167" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="312.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="🡪" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="312.0">
+               <padding>
+                  <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton fx:id="nextbtn" layoutX="558.0" layoutY="537.0" lineSpacing="1.0" onAction="#getQuestion" style="-fx-background-color: #4D62E5; -fx-text-fill: #FFFFFF; -fx-background-radius: 2px;" text="Next" textAlignment="CENTER" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="48.0">
+               <padding>
+                  <Insets bottom="8.0" left="32.0" right="32.0" top="8.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="1.0" cycleMethod="REFLECT" focusAngle="180.0" focusDistance="0.04" proportional="false" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.2160000056028366" green="0.303600013256073" blue="0.800000011920929" opacity="0.9551671743392944" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.09803921729326248" green="0.11372549086809158" blue="0.20000000298023224" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <MFXButton layoutX="436.8" layoutY="530.4" style="-fx-background-color: #575B6F; -fx-text-fill: #FFFFFF; -fx-background-radius: 2px;" text="Back" textFill="#0b0b0b" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="146.0">
+               <padding>
+                  <Insets bottom="8.0" left="32.0" right="32.0" top="8.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="1.0" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="0.4" proportional="false" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.40290001034736633" green="0.4243200123310089" blue="0.5099999904632568" opacity="0.9551671743392944" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03438596427440643" green="0.06549707800149918" blue="0.2210526317358017" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <Label layoutX="28.0" layoutY="150.0" style="-fx-background-color: NULL; -fx-text-fill: #ffffff; -fx-border-radius: 3 0 0 3; -fx-border-color: #B6F09C; -fx-border-width: 1 .1 1 1;" text="[A]" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="26.0" right="26.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <MFXButton layoutX="14.0" layoutY="530.0" style="-fx-background-radius: 2px; -fx-background-color: null; -fx-text-fill: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-width: .5;" text="Previous" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="30.0">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <rippleColor>
+                  <RadialGradient centerY="0.42803035360394104" cycleMethod="REFLECT" focusAngle="-174.29" focusDistance="-0.20183480114018149" proportional="false" radius="0.4541284403669725">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11150097101926804" green="0.14664067327976227" blue="0.27368420362472534" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </rippleColor>
+            </MFXButton>
+            <Label layoutX="28.0" layoutY="201.0" style="-fx-background-color: NULL; -fx-text-fill: #ffffff; -fx-border-radius: 3 0 0 3; -fx-border-color: #B6F09C; -fx-border-width: 1 .1 1 1;" text="[B]" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="201.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="26.0" right="26.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="28.0" layoutY="252.0" style="-fx-background-color: NULL; -fx-text-fill: #ffffff; -fx-border-radius: 3 0 0 3; -fx-border-color: #B6F09C; -fx-border-width: 1 .1 1 1;" text="[C]" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="252.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="26.0" right="26.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="28.0" layoutY="303.0" style="-fx-background-color: NULL; -fx-text-fill: #ffffff; -fx-border-radius: 3 0 0 3; -fx-border-color: #B6F09C; -fx-border-width: 1 .1 1 1;" text="[D]" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="303.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="26.0" right="26.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <RadioButton fx:id="op1" layoutX="149.0" layoutY="160.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="539.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 0 3 3 0; -fx-border-width: 1 1 1 0;" text="The applet makes the Java code secure and portable" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="16.0" right="16.0" top="8.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="options" />
+               </toggleGroup>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="op2" layoutX="100.0" layoutY="201.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="540.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 0 3 3 0; -fx-border-width: 1 1 1 0;" text="The applet makes the Java code secure and portable" textFill="WHITE" toggleGroup="$options" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="32.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="16.0" right="16.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="op3" layoutX="110.0" layoutY="211.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="540.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 0 3 3 0; -fx-border-width: 1 1 1 0;" text="The applet makes the Java code secure and portable" textFill="WHITE" toggleGroup="$options" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="252.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="16.0" right="16.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="op4" layoutX="110.0" layoutY="211.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="540.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 0 3 3 0; -fx-border-width: 1 1 1 0;" text="The applet makes the Java code secure and portable" textFill="WHITE" toggleGroup="$options" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="303.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="16.0" right="16.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

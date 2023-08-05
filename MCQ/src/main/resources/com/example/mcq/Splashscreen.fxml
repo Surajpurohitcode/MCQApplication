@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="860.0" style="-fx-background-color: #131619; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.SplashscreenController">
+   <top>
+      <AnchorPane prefHeight="374.0" prefWidth="858.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="416.0" layoutY="83.0" prefHeight="457.0" prefWidth="858.0" style="-fx-border-color: 0; -fx-background-radius: ; -fx-border-radius: 0;" text="Quizzity" AnchorPane.bottomAnchor="-83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.4242424404982364" proportional="false" startY="0.8560606205102169">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5098039507865906" green="0.8588235378265381" blue="0.9686274528503418" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4399999976158142" green="0.19308629631996155" blue="0.17599999904632568" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="457.0" fitWidth="915.0" layoutX="19.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="0.8843749999999773">
+               <image>
+                  <Image url="@../../../image/GoldenCanonGrid%20specs%201920.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="204.0" prefWidth="860.0" style="-fx-border-color: #3D3D3D; -fx-border-width: .1 0 0 0; -fx-border-radius: 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="42.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Leelawadee UI" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="0.14015153140732728" startY="0.9280303210923166">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5098039507865906" green="0.8588235378265381" blue="0.9686274528503418" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9340511440107673">
+                           <color>
+                              <Color red="0.5098039507865906" green="0.8588235378265381" blue="0.9686274528503418" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7137255072593689" green="0.9411764740943909" blue="0.6117647290229797" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <MFXProgressSpinner prefHeight="24.0" prefWidth="83.0" startingAngle="-299999.0">
+                     <color2>
+                        <Color red="1.0" green="0.7254902124404907" />
+                     </color2>
+                     <color3>
+                        <Color red="0.49803921580314636" green="0.729411780834198" />
+                     </color3>
+                     <color4>
+                        <Color red="0.9490196108818054" green="0.3137255012989044" blue="0.13333334028720856" />
+                     </color4>
+                     <color1>
+                        <Color green="0.6431372761726379" blue="0.9372549057006836" />
+                     </color1>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </MFXProgressSpinner>
+               </graphic>
+            </Label>
+            <Label layoutX="734.0" layoutY="146.0" text="B.J.S.Rampuria Jain College in Bikaner" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="486.6" layoutY="1.0999999999999999" text="Naveen &amp; Suraj's Creation |" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="0.0">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.5977157950401306" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

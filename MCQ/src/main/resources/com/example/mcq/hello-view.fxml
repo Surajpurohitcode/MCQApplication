@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="846.0" style="-fx-background-color: #131619;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.HelloController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="810.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="29.0" layoutY="30.0" text="MCQBddy" textFill="#4d62e5" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="100.0" text="Hello" textFill="WHITE" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="210.0" layoutY="100.0" text="Student!" textFill="#4d66e3" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="138.0" fitWidth="123.0" layoutX="645.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: lighten;" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="37.0">
+               <image>
+                  <Image url="@../../../image/sbjsrlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="426.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" text="Enter Your Information" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="accno" floatingText="Enter Your Account Number" focusTraversable="false" layoutX="30.0" layoutY="72.0" style="-fx-background-radius: 15; -fx-region-border: none; -fx-padding: 10;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+            <MFXTextField fx:id="username" floatingText="Enter Your Name" focusTraversable="false" layoutX="125.0" layoutY="164.0" style="-fx-background-radius: 15; -fx-region-border: none; -fx-padding: 10;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+            <Button layoutX="205.0" layoutY="275.0" mnemonicParsing="false" style="-fx-background-color: #B6F09C; -fx-background-radius: 15; -fx-pref-height: 55;" text="Explore" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

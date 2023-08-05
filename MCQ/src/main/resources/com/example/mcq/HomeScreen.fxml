@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="938.0" style="-fx-background-color: #131619;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.HomePage">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="168.0" layoutY="42.0" prefHeight="499.0" prefWidth="616.0" style="-fx-background-color: #393E42; -fx-background-radius: 30;" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="154.0" AnchorPane.topAnchor="42.0">
+               <children>
+                  <AnchorPane prefHeight="205.0" prefWidth="617.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="294.0" layoutY="94.0" text="Quizzity" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" proportional="false">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.006729475100942127">
+                                       <color>
+                                          <Color red="0.2666666805744171" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="267.0" prefWidth="617.0">
+                     <children>
+                        <MFXButton fx:id="start_btn" layoutX="173.0" layoutY="121.0" onAction="#startGame" prefHeight="46.0" prefWidth="263.0" style="-fx-background-color: #4D62E5; -fx-text-fill: white; -fx-background-radius: 30;" text="Start Game" textFill="WHITE" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="121.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </MFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

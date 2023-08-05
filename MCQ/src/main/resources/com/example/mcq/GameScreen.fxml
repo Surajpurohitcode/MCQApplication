@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="938.0" style="-fx-background-color: #131619;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mcq.McqGame">
+   <right>
+      <AnchorPane prefHeight="631.0" prefWidth="266.0" style="-fx-background-color: #1C1F22; -fx-border-width: 1px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="48.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 4px;" text="Level 1" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <padding>
+                  <Insets bottom="8.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label fx:id="mysubject" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="74.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 4px;" text="null" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+               <padding>
+                  <Insets bottom="8.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <MFXButton fx:id="playbtn" alignment="CENTER" layoutX="114.0" layoutY="502.0" onAction="#playGame" style="-fx-background-color: #B6F09C; -fx-font-weight: bold;" text="Play" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <padding>
+                  <Insets bottom="8.0" top="8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <rippleColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8352941274642944" green="1.0" blue="0.7607843279838562" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5836744904518127" green="0.7894737124443054" blue="0.48830410838127136" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </rippleColor>
+            </MFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="253.0" text="00:00" textFill="#a8b9ca" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="subjects" alignment="TOP_LEFT" layoutX="100.0" layoutY="148.0" mnemonicParsing="false" style="-fx-text-fill: #219ebc;" text="-Select-" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="136.0">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <padding>
+                  <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuButton>
+            <Label layoutX="31.0" layoutY="145.0" text="Select Subject" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="141.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="289.0" prefWidth="672.0" style="-fx-border-color: #676565; -fx-border-width: 0 1 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="308.0" layoutY="276.0" text="Discover Your True Intelligence with Our In-Depth IQ Test" textFill="#a8b9ca" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <MFXButton layoutX="46.0" layoutY="544.0" style="-fx-background-color: null; -fx-border-color: #FFFFFF; -fx-text-fill: #FFFFFF; -fx-border-radius: 2px;" text="🡨 Back" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="48.0">
+               <padding>
+                  <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+               </padding>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
